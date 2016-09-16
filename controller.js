@@ -15,13 +15,13 @@ var controller = {
   playGame: function(){
     controller.counter ++;
     if(controller.counter % 25 === 0){
-      model.dropBlock();
+      model.tic();
     }
     view.render(model.grid);
-    if (controller.gameOver()) {
-      alert("Game over.");
-      clearInterval(gameLoop);
-    }
+    // if (controller.gameOver()) {
+    //   alert("Game over.");
+    //   clearInterval(gameLoop);
+    // }
   },
 
   handleKeyPress: function(key){
